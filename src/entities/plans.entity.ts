@@ -4,7 +4,7 @@ import { Entity } from "typeorm/decorator/entity/Entity";
 @Entity('plans')
 export class Plans {
   @PrimaryGeneratedColumn()
-  id: string;
+  id: number;
 
   @Column({ type: 'text' })
   title: string;
